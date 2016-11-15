@@ -419,3 +419,8 @@ footer {
     color: #34495E;
     font-size: 14px;
 }
+
+/* RIO Modded */
+.bebas-input{
+    border: solid 1px #24C0D9;
+}
