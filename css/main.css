@@ -422,5 +422,9 @@ footer {
 
 /* RIO Modded */
 .bebas-input{
-    border: solid 1px #24C0D9;
+    border: solid 1px rgba(3, 169, 255, .2);
+}
+
+.bg-semi-trans{
+    background-color: #f8fdff;
 }
