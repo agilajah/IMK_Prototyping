@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/owl.carousel.css">
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/main.css">
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
@@ -67,7 +68,7 @@
                                                 <input type="text" required class="form-control" placeholder="Search...">
                                             </div>
 
-                                            <button id="searchbutton" type="submit" class="send-button button">
+                                            <button id="searchbutton" type="submit" class="send-button button bebas-search-button">
                                                 <span class="glyphicon glyphicon-search"></span>
                                             </button>
                                         </form>
@@ -75,14 +76,104 @@
                                     <!-- END search bar form -->
                 </div>
                 <!-- TOGGLE NAV -->
+                <style type="text/css">
+
+                    .bebas-foto{
+                      border-radius: 50%;
+                      height: 50px;
+                      width: 50px;
+                    }
+
+                    .bebas-foto2{
+                      height: 35px;
+                    }
+
+                    .bebas-pic-ops{
+                      text-align: center;
+                      padding: 0 !important;
+                      margin-right: 40px !important;
+                      margin-left: 10px !important;
+                    }
+
+                    .bebas-pic-ops2{
+                      width: 70px;
+                      text-align: center;
+                      padding: 0 !important;
+                    }
+
+                    .bebas-pic-ops2 > i{
+                      font-size: 35px;
+                    }
+
+                    .bebas-pic-ops > span{
+                      margin-left: 10px !important;
+                    }
+
+                    .pic-ops-text{
+                      font-size: .8em;
+                    }
+
+                    .more-small{
+                      font-size: 30px !important;
+                    }
+                    .absolute-number{
+                      position: fixed;
+                      margin-top: -40px;
+                      margin-left: 40px;
+                      height: 20px;
+                      font-size: .7em;
+                      z-index: 99;
+                      padding: 0px;
+                      padding: 0 4px;
+                      color: white;
+                      border-radius: 10px;
+                      background-color: red;
+                    }
+
+                    .bebas-ico-sort{
+                      font-size: 25px;
+                      position: relative;
+                      top: -2px;
+                      padding-left: 5px;
+                    }
+                </style>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden">
                             <a href="#page-top"></a>
                         </li>
-                        <li><a class="page-scroll" href="#top">Create Communities</a>
+                        <li>
+                          <a class="bebas-pic-ops2" href="#contact">
+                            <i class="fa fa-home bebas-foto2"></i>
+                            <div class="pic-ops-text">Home</div>
+                          </a>
                         </li>
-                        <li><a class="page-scroll" href="#contact">Find Communities</a>
+                        <li>
+                          <a class="bebas-pic-ops2" href="#contact">
+                            <i class="fa fa-users bebas-foto2 more-small"></i>
+                            <div class="absolute-number">972</div>
+                            <div class="pic-ops-text">Discussion</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="bebas-pic-ops2" href="#contact">
+                            <i class="fa fa-comments bebas-foto2"></i>
+                            <div class="absolute-number">12</div>
+                            <div class="pic-ops-text">Chat</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="bebas-pic-ops2" href="#contact">
+                            <i class="fa fa-exclamation-circle bebas-foto2"></i>
+                            <div class="absolute-number">37</div>
+                            <div class="pic-ops-text">Notifs</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="bebas-pic-ops" href="#contact">
+                            <img src="../img/client.png" class="bebas-foto">
+                            <span>Sarah Watson <i class="fa fa-sort-down bebas-ico-sort"></i></span>
+                          </a>
                         </li>
 
 

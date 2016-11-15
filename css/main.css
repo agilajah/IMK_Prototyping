@@ -6,6 +6,8 @@ Dark Gray: #727272;
 /* GENERAL STYLES
 ================================================ */
 
+
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -438,4 +440,8 @@ footer {
 
 .search {
     padding-top: 3px;
+}
+
+.bebas-search-button{
+    margin-left: 20px !important;
 }
