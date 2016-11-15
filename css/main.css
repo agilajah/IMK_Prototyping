@@ -419,3 +419,10 @@ footer {
     color: #34495E;
     font-size: 14px;
 }
+
+.form-search {
+    margin-left: 20px;
+
+    min-width: 300px;
+        width: 350px;
+}
