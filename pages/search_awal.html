@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>BebasJoin | My Community</title>
+    <title>BebasJoin | Discussion</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -26,6 +26,8 @@
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/tes.css">
+    <link rel="stylesheet" href="../css/search.css">
     <link rel='stylesheet' href='../css/perfect-scrollbar.css' />
     <script src='../js/jquery.min.js'></script>
     <script src='../js/perfect-scrollbar.jquery.js'></script>
@@ -89,7 +91,7 @@
                                                 <input id="nav-search" type="text" required class="form-control" placeholder="Search...">
                                             </div>
 
-                                            <button id="searchbutton" type="submit" class="send-button button bebas-search-button">
+                                            <button onclick="location.href='search.html'" id="searchbutton" type="submit" class="send-button button bebas-search-button" >
                                                 <span class="glyphicon glyphicon-search"></span>
                                             </button>
                                         </form>
@@ -224,54 +226,115 @@
     <section id="content" class="section">
         <div class="container">
             <div class="padding">
-                        <div class="full col-sm-9">
+                        <div class="full col-sm-10">
                           
                             <!-- content -->                      
                             <div class="row">
                               
                              <!-- main col left --> 
                              <div class="col-sm-5">
-                               
-                                  <div class="panel panel-default">
-                                    <div class="panel-thumbnail"><img src="/assets/example/bg_5.jpg" class="img-responsive"></div>
-                                    <div class="panel-body">
-                                      <p class="lead">Sarah Watson</p>
-                                      <p>13 Communities. 45 Friends</p>
-                                      
-                                      <p>
-                                        <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
-                                      </p>
-                                    </div>
-                                  </div>
-
-                                 <div class="panel panel-default">
-                                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>What's next?</h4></div>
-                                      <div class="panel-body">
-                                        <div class="list-group">
-                                          <a href="" class="list-group-item">4 upcoming events</a>
-                                        </div>
-                                      </div>
-                                  </div>
 
                                     <div class="panel panel-default">
                                      <div class="panel-heading">
-                                        <h4>Bio</h4>
+                                     <h4>Category</h4>
                                      </div>
                                       <div class="panel-body">
-                                        <img src="//placehold.it/150x150" class="img-circle pull-right"> <a href="#">About Me</a>
-                                        <div class="clearfix"></div>
-                                        I am supercool.
-                                        <hr>
-                                        <ul class="list-unstyled">
-                                            <li>   <a href="">Interests</a>
-                                                <div class="list-group">
-                                                    <a href="" class="list-group-item">Reading</a>
-                                                    <a href="" class="list-group-item">Photography</a>
-                                                    <a href="" class="list-group-item">Volley</a>
-                                                </div>
-
-                                            </li>
-                                        </ul>
+                                        <div class="checkbox">
+                                            <input id="checkbox1" type="checkbox" checked="">
+                                            <label for="checkbox1">
+                                                Book
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox2" type="checkbox" >
+                                            <label for="checkbox2">
+                                                Music
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-success">
+                                            <input id="checkbox3" type="checkbox">
+                                            <label for="checkbox3">
+                                                Sport
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox4" type="checkbox">
+                                            <label for="checkbox4">
+                                                News
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-warning">
+                                            <input id="checkbox5" type="checkbox" >
+                                            <label for="checkbox5">
+                                                Entertainment
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox6" type="checkbox" >
+                                            <label for="checkbox6">
+                                                Movies
+                                            </label>
+                                        </div>
+                                        <div class="checkbox">
+                                            <input id="checkbox7" type="checkbox">
+                                            <label for="checkbox7">
+                                                Technology
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary">
+                                            <input id="checkbox8" type="checkbox" >
+                                            <label for="checkbox8">
+                                                Gadget
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-success">
+                                            <input id="checkbox9" type="checkbox">
+                                            <label for="checkbox9">
+                                                Gossip
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox10" type="checkbox">
+                                            <label for="checkbox10">
+                                                Politic
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-warning">
+                                            <input id="checkbox11" type="checkbox" >
+                                            <label for="checkbox11">
+                                                Culture
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox13" type="checkbox" >
+                                            <label for="checkbox13">
+                                                Culinary
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox14" type="checkbox" >
+                                            <label for="checkbox14">
+                                                Science
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox15" type="checkbox" >
+                                            <label for="checkbox15">
+                                                Art
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox16" type="checkbox" >
+                                            <label for="checkbox16">
+                                                Religion
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox17" type="checkbox" >
+                                            <label for="checkbox17">
+                                                Computer
+                                            </label>
+                                        </div>
                                       </div>
                                   </div>
 
@@ -279,11 +342,14 @@
                                   <div class="panel panel-default">
                                     <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Suggested Communities</h4></div>
                                       <div class="panel-body">
-                                        <div class="list-group">
-                                          <a href="" class="list-group-item">Komunitas Baca Bandung</a>
-                                          <a href="" class="list-group-item">Komunitas Volley Bandung</a>
-                                          <a href="" class="list-group-item">Komunitas Volley Bandung</a>
-                                        </div>
+                                        <select class="selectpicker" data-style="btn-primary">
+                                          <option>Recently posted</option>
+                                          <option>Most members </option>
+                                          <option>Least members</option>
+                                          <option>Most posts</option>
+                                          <option>Newest community</option>
+                                          <option>Oldest community</option>'
+                                        </select> 
                                       </div>
                                   </div>
                                
@@ -293,89 +359,23 @@
                               
                               <!-- main col right -->
                               <div class="col-sm-7">
-                                 
-                                    <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-info">Owned</button>
-                                      </div>
-                                   </div>
-                                
-                               <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-danger">Leave</button>
-                                      </div>
-                                   </div>
-                               
-                               <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-danger">Leave</button>
-                                      </div>
-                                   </div>
-                               
-                               <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-danger">Leave</button>
-                                      </div>
-                                   </div>
-                               
-                               <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-danger">Leave</button>
-                                      </div>
-                                   </div>
-                               
-                               <div class="panel panel-default">
-                                     <div class="panel-heading"><h4>Komunitas Volley Indonesia</h4><h6>23,564 members - 756 posts</h6></div>
-                                      <div class="panel-body">
-                                        
-                                        <p>
-											Komunitas pecinta voli se-Indonesia!
-											Join sekarang untuk diskusi dan informasi gathering terbaru
-                                        </p>
-                                                                            
-                                        <button class="btn btn-danger">Leave</button>
-                                      </div>
-                                   </div>
-                               
-                                   
-                                
-
+                                <div class="panel panel-default"> 
+                                   <div class="panel-heading">
+                                     <h4>Search</h4>
+                                     </div>
+                                        <div id="custom-search-input">
+                                                <div class="input-group col-md-12">
+                                                    <input type="text" class="form-control input-lg" placeholder="Type what you want to search" />
+                                                    <span class="input-group-btn">
+                                                        <button class="btn btn-info btn-lg" type="button">
+                                                            <i class="glyphicon glyphicon-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                  </div>
                               </div>
+
                            </div><!--/row-->
                           
                             
