@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="../css/template.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel='stylesheet' href='../css/perfect-scrollbar.css' />
+    <script src='../js/jquery.min.js'></script>
+    <script src='../js/perfect-scrollbar.jquery.js'></script>
+    <script src='../js/perfect-scrollbar.js'></script>
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
@@ -34,9 +38,26 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade ybrowser</a> to improve your experience.</p>
     <![endif]-->
 
+    <style type="text/css">
+      #mynav{
+        padding: 5px !important;
+        height: 50px !important;
+      }
+      #mynav > #bs-example-navbar-collapse-1{
+      }
+
+      #nav-search{
+        height: 32px !important;
+        border: solid 1px rgba(3, 169, 255, .2);
+      }
+      #searchbutton{
+        height: 32px !important;
+        padding: 0 15px !important;
+      }
+    </style>
     <header>
         <!-- NAVIGATION -->
-        <nav class="navbar navbar-default navbar-fixed-top bg-semi-trans">
+        <nav class="navbar navbar-default navbar-fixed-top bg-semi-trans" id="mynav">
             
                 <!-- <div class="container">Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
@@ -49,7 +70,7 @@
 
                     <!-- LOGO -->
                     <a class="navbar-brand page-scroll" id="logo" href="../index.html">
-                        <img src="../img/logo2.png" alt="logo-bebasjoin" height="40" width="40">
+                        <img src="../img/logo2.png" alt="logo-bebasjoin" height="30" width="30">
                     </a>
                     <!-- END LOGO -->
 
@@ -65,7 +86,7 @@
                                     <div class="form-search pull-left col-md-10">
                                         <form action="#" method="post" class="">
                                             <div class="form-group pull-left">
-                                                <input type="text" required class="form-control" placeholder="Search...">
+                                                <input id="nav-search" type="text" required class="form-control" placeholder="Search...">
                                             </div>
 
                                             <button id="searchbutton" type="submit" class="send-button button bebas-search-button">
@@ -80,8 +101,8 @@
 
                     .bebas-foto{
                       border-radius: 50%;
-                      height: 50px;
-                      width: 50px;
+                      height: 35px;
+                      width: 35px;
                     }
 
                     .bebas-foto2{
@@ -102,7 +123,8 @@
                     }
 
                     .bebas-pic-ops2 > i{
-                      font-size: 35px;
+                      height: 0;
+                      font-size: 20px;
                     }
 
                     .bebas-pic-ops > span{
@@ -110,23 +132,26 @@
                     }
 
                     .pic-ops-text{
-                      font-size: .8em;
+                      font-size: .6em;
+                      margin-top: -3px;
                     }
 
                     .more-small{
-                      font-size: 30px !important;
+                      font-size: 20px !important;
                     }
                     .absolute-number{
                       position: fixed;
-                      margin-top: -40px;
+                      margin-top: -25px;
                       margin-left: 40px;
-                      height: 20px;
-                      font-size: .7em;
+                      height: 15px;
+                      font-size: .6em;
                       z-index: 99;
                       padding: 0px;
-                      padding: 0 4px;
+                      padding: 0 2px;
+                      padding-bottom: 10 !important;
                       color: white;
-                      border-radius: 10px;
+                      line-height: 180%;
+                      border-radius: 7.5px;
                       background-color: red;
                     }
 
@@ -150,7 +175,7 @@
                         </li>
                         <li>
                           <a class="bebas-pic-ops2" href="#contact">
-                            <i class="fa fa-users bebas-foto2 more-small"></i>
+                            <i class="fa fa-users bebas-foto2"></i>
                             <div class="absolute-number">972</div>
                             <div class="pic-ops-text">Discussion</div>
                           </a>
@@ -191,6 +216,11 @@
     <!-- THIS IS THE CONTENT -->
     <!-- -------------------------------------------------------------------------------- -->
     
+    <style type="text/css">
+      #content{
+        margin-top: unset;
+      }
+    </style>
     <section id="content" class="section">
         <div class="container">
             <div class="padding">
@@ -331,10 +361,143 @@
         </section>
 
 
+        <style type="text/css">
+          .friend-list{
+            position: fixed;
+            background-color: #f8fdff;
+            width: 370px;
+            height: calc(100vh - 51px);
+            top: 51px;
+            right: 0;
+            overflow: scroll;
+            overflow-y: hidden;
+            overflow-x: hidden;
+          }
+          .friend-list > #container {
+            position: relative;
+            height: calc(100% - 50px); /* Or whatever you want (eg. 400px) */
+          }
+
+          .friend-list > .search-box{
+            width: 100%;
+          }
+
+          .friend-list > .search-box > span{
+            margin-top: 15px;
+            margin-left: 15px;
+            font-size: 20px;
+            z-index: 999;
+          }
+
+          .friend-list > .search-box > input{
+            background-color: #f1faff;
+            position: absolute;
+            margin-left: -35px;
+            width: 100%;
+            height: 50px;
+            border: none;
+            text-indent: 50px;
+          }
+
+          .friend{
+            padding: 10px 20px;
+            background-color: rgba(255, 255, 255, 1);
+            cursor: pointer;
+            transition: 200ms;
+          }
+
+          .friend:hover{
+            background-color: rgba(255, 255, 255, 0);
+          }
+
+          .friend > img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+          }
+
+          .friend > span{
+            margin-left: 10px;
+          }
+        </style>
+        <div class="friend-list" id="friend-list">
+          <div id="container">
+            <div class="friend">
+              <img src="../img/client2.png"><span>John Smith</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Michele Sarah</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Chatrine Kie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Vanessa Dise</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Kite Chaene</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client2.png"><span>Paul Ingdie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Jennie Yoanna</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Sarah Jane</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client2.png"><span>Blued Garnie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Lee Hoo</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client2.png"><span>John Smith</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Michele Sarah</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Chatrine Kie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Vanessa Dise</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Kite Chaene</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client2.png"><span>Paul Ingdie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Jennie Yoanna</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client3.png"><span>Sarah Jane</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client2.png"><span>Blued Garnie</span>
+            </div>
+            <div class="friend">
+              <img src="../img/client.png"><span>Lee Hoo</span>
+            </div>
+          </div>
+          <div class="search-box">
+            <span class="glyphicon glyphicon-search"></span>
+            <input type="text" placeholder="Search friends"></input>
+          </div>
+        </div>
     
 
 
     <script>
+    $(function() {
+        $('#container').perfectScrollbar();
+
+        // with vanilla JS!
+        // Ps.initialize(document.getElementById('container'));
+    });
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
