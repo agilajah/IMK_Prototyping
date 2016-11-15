@@ -417,3 +417,11 @@ footer {
     color:#666;
 }
 
+          #profile-pict > img {
+            border-radius: 50%;
+            margin-top: 7px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 130px;
+            height: 130px;
+          }
