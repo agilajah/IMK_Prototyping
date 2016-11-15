@@ -445,3 +445,8 @@ footer {
 .bebas-search-button{
     margin-left: 20px !important;
 }
+
+#dont {
+    color: #fff;
+    text-decoration: none;
+}
