@@ -4,17 +4,61 @@
 	<title>Navigasi Prototype</title>
 </head>
 <body>
-	<a href="index.html" target="_BLANK" >Home</a><br/>
-	<a href="pages/accept.html" target="_BLANK" >accept</a><br/>
-	<a href="pages/profile.html" target="_BLANK" >profile</a><br/>
-	<a href="pages/discussion2.html" target="_BLANK" >discussion2</a><br/>
-	<a href="pages/reg.html" target="_BLANK" >reg</a><br/>
-	<a href="pages/discussion.html" target="_BLANK" >discussion</a><br/>
-	<a href="pages/register.html" target="_BLANK" >register</a><br/>
-	<a href="pages/invite.html" target="_BLANK" >invite</a><br/>
-	<a href="pages/search_awal.html" target="_BLANK" >search_awal</a><br/>
-	<a href="pages/members.html" target="_BLANK" >members</a><br/>
-	<a href="pages/search.html" target="_BLANK" >search</a><br/>
-	<a href="pages/mycommunity.html" target="_BLANK" >mycommunity</a><br/>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+		div{
+			position: fixed;
+			bottom: 0;
+			padding: 20px;
+			background-color: rgba(0, 0, 0, .2);
+		}
+		a{
+			background-color: rgba(0, 0, 255, .2);
+			padding: 5px;
+			border-radius: 5px;
+			line-height: 30px;
+			color: white;
+			text-decoration: none;
+		}
+		a:hover{
+			background-color: rgba(0, 0, 255, 1);
+		}
+		iframe{
+			width: 100vw;
+			height: 100vh;
+			border: none;
+		}
+	</style>
+	<div>
+		<a href="index.html" target="_BLANK" >Home</a><br/>
+		<a href="pages/accept.html" target="_BLANK" >accept</a><br/>
+		<a href="pages/profile.html" target="_BLANK" >profile</a><br/>
+		<a href="pages/discussion2.html" target="_BLANK" >discussion2</a><br/>
+		<a href="pages/reg.html" target="_BLANK" >reg</a><br/>
+		<a href="pages/discussion.html" target="_BLANK" >discussion</a><br/>
+		<a href="pages/register.html" target="_BLANK" >register</a><br/>
+		<a href="pages/invite.html" target="_BLANK" >invite</a><br/>
+		<a href="pages/search_awal.html" target="_BLANK" >search_awal</a><br/>
+		<a href="pages/members.html" target="_BLANK" >members</a><br/>
+		<a href="pages/search.html" target="_BLANK" >search</a><br/>
+		<a href="pages/mycommunity.html" target="_BLANK" >mycommunity</a><br/>
+	</div>
+	<iframe src="index.html" id="me">
+		
+	</iframe>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('a').click(function(e){
+				$('#me').attr('src',this.href); 
+				e.preventDefault();
+			})
+		})
+	</script>
 </body>
 </html>

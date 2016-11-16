@@ -452,3 +452,13 @@ footer {
     color: #fff;
     text-decoration: none;
 }
+
+.friend:after{
+    content: '';
+    margin-top: 15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    float: right;
+    background-color: #00FF01;
+}
