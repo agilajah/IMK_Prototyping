@@ -325,8 +325,17 @@ a:hover {
     color: #222;
 }
 
-
-
+#button-like-comment {
+    margin-top: 20px;
+    margin-left: 280px;
+    text-decoration: none;
+    list-style: none;
+}
+#button-like-comment li{
+    display:inline-block;
+    margin-left: 10px;
+    color: #24C0D9;
+}
 .regist-form .form-control {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -441,3 +450,30 @@ footer {
             width: 130px;
             height: 130px;
           }
+
+
+
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  
+  border-bottom: 5px solid black;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  margin-top: 5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  left: -10px;
+  border-top: 5px solid black;
+}
+
+#comments li {
+    text-decoration: none;
+    list-style: none;
+}
