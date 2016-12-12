@@ -347,8 +347,9 @@ a:hover {
     color: #24C0D9;
 }
 #button-like-comment-anak {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 0px;
+    margin-bottom: 25px;
     padding:0;
     text-decoration: none;
     list-style: none;
@@ -356,7 +357,18 @@ a:hover {
 #button-like-comment-anak li{
     display:inline-block;
     color: #24C0D9;
+    margin-right: 3px;
 }
+
+.commentttt {
+    margin-left: 7px;
+    color: #727272!important;
+}
+
+.label-primary {
+    background-color: #24C0D9!important;
+}
+
 #button-vote {
     margin-top: 20px;
     margin-right: 250px;
