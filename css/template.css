@@ -324,7 +324,17 @@ a:hover {
     background: #fff;
     color: #222;
 }
-
+.header-discussion {
+    margin-top: 0px;
+    margin-right: 250px;
+    text-decoration: none;
+    list-style: none;
+}
+.header-discussion li{
+    display:inline-block;
+    margin-left: 10px;
+    color: #24C0D9;
+}
 #button-like-comment {
     margin-top: 20px;
     margin-left: 280px;
@@ -332,6 +342,30 @@ a:hover {
     list-style: none;
 }
 #button-like-comment li{
+    display:inline-block;
+    margin-left: 10px;
+    color: #24C0D9;
+}
+#button-like-comment-anak {
+    margin-top: 20px;
+    margin-left: 0px;
+    padding:0;
+    text-decoration: none;
+    list-style: none;
+}
+#button-like-comment-anak li{
+    display:inline-block;
+    color: #24C0D9;
+}
+#button-vote {
+    margin-top: 20px;
+    margin-right: 250px;
+    text-decoration: none;
+    list-style: none;
+    padding:0;
+}
+
+#button-vote li{
     display:inline-block;
     margin-left: 10px;
     color: #24C0D9;
