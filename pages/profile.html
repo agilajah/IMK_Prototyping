@@ -19,7 +19,8 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
     <!-- <link rel="stylesheet" href="../css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/animate.css">
     <link rel="stylesheet" href="../css/prettyPhoto.css">
@@ -28,10 +29,21 @@
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel='stylesheet' href='../css/perfect-scrollbar.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src='../js/perfect-scrollbar.jquery.js'></script>
     <script src='../js/perfect-scrollbar.js'></script>
     <script src="../js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
+
+    <!-- bootbox code -->
+    <script src="../js/bootbox.min.js"></script>
+    <script>
+        $(document).on("click", ".delete", function(e) {
+            bootbox.confirm("Sure want to delete this discussion?", function(result){ console.log('This was logged in the callback: ' + result); });
+        });
+    </script>
 
 <body id="top">
     <!--[if lt IE 7]>
@@ -213,6 +225,7 @@
         margin-top: unset;
       }
     </style>
+    
     <section id="content" class="section">
         <div class="container">
             <div class="padding">
@@ -310,7 +323,7 @@
                                   </div>
 
                                     <div class="panel panel-default">
-                                     <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>#gabisa compile c</h4><h6>Community: Kodinger</h6></div>
+                                     <div class="panel-heading"><a href="#" class="delete pull-right">Delete</a> <h4>#gabisa compile c</h4><h6>Community: Kodinger</h6></div>
                                       <div class="panel-body">
                                         
                                         <p>Yang bener tuh  
@@ -318,8 +331,9 @@
                                                 #include < stdio.h >
                                         </code> atau <code>#include < studio.h > </code> yah gan?</p>
 
-                                                                        <ul id="button-like-comment">
+                                      <ul id="button-like-comment">
                                             <li>Like</li>
+                                            <li>Unlike</li>
                                             <li>Comment</li>
                                         </ul> 
                                                                             
@@ -338,15 +352,16 @@
                                    </div>
                                 
                                    <div class="panel panel-default">
-                                     <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>#Gathering Komunitas sepeda Bandung</h4><h6>Community: Komunitas sepeda Bandung</h6></div>
+                                     <div class="panel-heading "><a href="#" class="delete pull-right">Delete</a> <h4>#Gathering Komunitas sepeda Bandung</h4><h6>Community: Komunitas sepeda Bandung</h6></div>
                                       <div class="panel-body">
                                         
                                         <p>Jadi rencananya kita ada gathering nih di akhir november. Punya usulan tempat yang enak ga?</p>
 
-                                                                        <ul id="button-like-comment">
-                                            <li>Like</li>
-                                            <li>Comment</li>
-                                        </ul> 
+                                          <ul id="button-like-comment">
+                                                 <li>Like</li>
+                                                <li>Unlike</li>
+                                                <li>Comment</li>
+                                            </ul> 
                                         
                                         <hr>
                                         <form>
