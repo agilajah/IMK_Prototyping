@@ -234,15 +234,30 @@
                              <!-- main col left --> 
                              <div class="col-sm-5">
 
+                                    <div class="panel panel-default"> 
+                                   <div class="panel-heading">
+                                     <h4>Search</h4>
+                                     </div>
+                                        <div id="custom-search-input">
+                                                <div class="input-group col-md-12">
+                                                    <input type="text" class="form-control input-lg" placeholder="Type what you want to search" />
+                                                    <span class="input-group-btn">
+                                                        <button onclick="location.href='search.html'" class="btn btn-info btn-lg" type="button">
+                                                            <i class="glyphicon glyphicon-search"></i>
+                                                        </button>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                  </div>
                                     <div class="panel panel-default">
                                      <div class="panel-heading">
                                      <h4>Category</h4>
                                      </div>
                                       <div class="panel-body">
                                         <div class="checkbox">
-                                            <input id="checkbox1" type="checkbox" checked="">
+                                            <input id="checkbox1" type="checkbox" >
                                             <label for="checkbox1">
-                                                Book
+                                                Art
                                             </label>
                                         </div>
                                         <div class="checkbox checkbox-primary">
@@ -252,15 +267,15 @@
                                             </label>
                                         </div>
                                         <div class="checkbox checkbox-success">
-                                            <input id="checkbox3" type="checkbox">
+                                            <input id="checkbox3" type="checkbox" >
                                             <label for="checkbox3">
-                                                Sport
+                                                Book
                                             </label>
                                         </div>
-                                        <div class="checkbox checkbox-info">
-                                            <input id="checkbox4" type="checkbox">
-                                            <label for="checkbox4">
-                                                News
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox6" type="checkbox" >
+                                            <label for="checkbox6">
+                                                Movies
                                             </label>
                                         </div>
                                         <div class="checkbox checkbox-warning">
@@ -269,10 +284,52 @@
                                                 Entertainment
                                             </label>
                                         </div>
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox4" type="checkbox">
+                                            <label for="checkbox4">
+                                                Gossip
+                                            </label>
+                                        </div>
                                         <div class="checkbox checkbox-danger">
-                                            <input id="checkbox6" type="checkbox" >
-                                            <label for="checkbox6">
-                                                Movies
+                                            <input id="checkbox12" type="checkbox" >
+                                            <label for="checkbox12">
+                                                News
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-info">
+                                            <input id="checkbox10" type="checkbox">
+                                            <label for="checkbox10">
+                                                Politic
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox13" type="checkbox" >
+                                            <label for="checkbox13">
+                                                Culinary
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-warning">
+                                            <input id="checkbox11" type="checkbox" >
+                                            <label for="checkbox11">
+                                                Culture
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox16" type="checkbox" >
+                                            <label for="checkbox16">
+                                                Religion
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-success">
+                                            <input id="checkbox9" type="checkbox">
+                                            <label for="checkbox9">
+                                                Sport
+                                            </label>
+                                        </div>
+                                        <div class="checkbox checkbox-danger">
+                                            <input id="checkbox14" type="checkbox" >
+                                            <label for="checkbox14">
+                                                Science
                                             </label>
                                         </div>
                                         <div class="checkbox">
@@ -287,48 +344,6 @@
                                                 Gadget
                                             </label>
                                         </div>
-                                        <div class="checkbox checkbox-success">
-                                            <input id="checkbox9" type="checkbox">
-                                            <label for="checkbox9">
-                                                Gossip
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-info">
-                                            <input id="checkbox10" type="checkbox">
-                                            <label for="checkbox10">
-                                                Politic
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-warning">
-                                            <input id="checkbox11" type="checkbox" >
-                                            <label for="checkbox11">
-                                                Culture
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-danger">
-                                            <input id="checkbox13" type="checkbox" >
-                                            <label for="checkbox13">
-                                                Culinary
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-danger">
-                                            <input id="checkbox14" type="checkbox" >
-                                            <label for="checkbox14">
-                                                Science
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-danger">
-                                            <input id="checkbox15" type="checkbox" >
-                                            <label for="checkbox15">
-                                                Art
-                                            </label>
-                                        </div>
-                                        <div class="checkbox checkbox-danger">
-                                            <input id="checkbox16" type="checkbox" >
-                                            <label for="checkbox16">
-                                                Religion
-                                            </label>
-                                        </div>
                                         <div class="checkbox checkbox-danger">
                                             <input id="checkbox17" type="checkbox" >
                                             <label for="checkbox17">
@@ -336,44 +351,14 @@
                                             </label>
                                         </div>
                                       </div>
-                                  </div>
-
-
-                                  <div class="panel panel-default">
-                                    <div class="panel-heading"><a href="#" class="pull-right">View all</a> <h4>Suggested Communities</h4></div>
-                                      <div class="panel-body">
-                                        <select class="selectpicker" data-style="btn-primary">
-                                          <option>Recently posted</option>
-                                          <option>Most members </option>
-                                          <option>Least members</option>
-                                          <option>Most posts</option>
-                                          <option>Newest community</option>
-                                          <option>Oldest community</option>'
-                                        </select> 
-                                      </div>
-                                  </div>
-                               
-                                
+                                  </div> 
+                                  </div>                                
                                
                               </div>
                               
                               <!-- main col right -->
                               <div class="col-sm-7">
-                                <div class="panel panel-default"> 
-                                   <div class="panel-heading">
-                                     <h4>Search</h4>
-                                     </div>
-                                        <div id="custom-search-input">
-                                                <div class="input-group col-md-12">
-                                                    <input type="text" class="form-control input-lg" placeholder="Type what you want to search" />
-                                                    <span class="input-group-btn">
-                                                        <button class="btn btn-info btn-lg" type="button">
-                                                            <i class="glyphicon glyphicon-search"></i>
-                                                        </button>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                  </div>
+                          
                               </div>
 
                            </div><!--/row-->
