@@ -41,11 +41,6 @@
             bootbox.confirm("Sure want to delete this discussion?", function(result){ console.log('This was logged in the callback: ' + result); });
         });
     </script>
-        <script>
-        $(document).on("click", ".delete-anak", function(e) {
-            bootbox.confirm("Sure want to delete this comment?", function(result){ console.log('This was logged in the callback: ' + result); });
-        });
-    </script>
 
 <body id="top">
     <!--[if lt IE 7]>
@@ -320,11 +315,30 @@
                                 
                                
                               </div>
+                              <style>
+
+                                                 .fa-star{
+                                font-size: 2.2em;
+                                float: left;
+                                padding: 5px 10px;
+                              }
+                              .no-panel{
+                                color: blue;
+                                margin-bottom: 20px;
+                                background-color: rgba(50, 50, 255, .1);
+                                padding: 20px;
+                                border-radius: 10px;
+                              }
+                              </style>
                               
                              <!-- main col right -->
                               <div class="col-sm-7">
 
-                                                                <div class="panel panel-default"> 
+                                   <div class="no-panel">
+                                    <i class="fa fa-star"></i>
+                                    <div>Congratulation, your joined Linux Geek Bandung</div>
+                                  </div>
+                           <div class="panel panel-default"> 
                                     <div class="panel-body">
                                       <div class="row">
                                         <div class="col-sm-3">
